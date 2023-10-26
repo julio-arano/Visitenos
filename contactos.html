@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./ccs/estilos.css">
+    <link rel="shortcut icon" href="./img/address-book-solid.svg" type="image/x-icon">
+
+<title>Contáctenos</title>
+<script src="./js/validar.js"></script>
+</head>
+<body>
+    <div class="galeria"><!-- carrousel de IMG-->
+          <div class="listaImagenes">
+          <img src="./img/gouin.jpg" alt="imagenPrincipal">
+          <img src="./img/asado 2.jpg" alt="imagenPrincipal">
+          <img src="./img/el-fogon.jpg" alt="imagenPrincipal">
+          <img src="./img/fideos_caseros.jpg" alt="imagenPrincipal">
+          <img src="./img/estacionGouin.webp" alt="imagenPrincipal">
+          <img src="./img/jineteada2.jpg" alt="imagenPrincipal">
+          <img src="./img/pastelito.webp" alt="imagenPrincipal">
+    </div>     
+  <header>
+    
+      <div>
+       <nav>    <!--  nav a las otras paginas -->
+            <a href="index.html">Home</a>
+            <a href="./hospedajes.html">Hospedajes</a>
+            <a href="./gastronomia.html">¿Dónde comer?</a>
+            <a href="./turismo.html">¿Qué hacer?</a>
+            <a href="./fiestapop.html">Fiesta del Pastel!</a>
+            <a href="./contactos.html">Contacto</a>
+            <a href="./mapa.html">¿cómo llegar?</a>
+            <a href="./condiciones.html">Condiciones TPO</a>
+            <a href="https://www.carmendeareco.gob.ar/turismo/">Web oficial<img src="./img/logo_Carmen-de-Areco.png" alt=""width="50" height=""></a>     
+       </nav>
+      </div>
+   </header>
+   <div class="row">
+   <div class="col-8 col-s-8 menu"> <!--  división de columnas -->
+   <h2>Formulario de Contacto</h2>
+   <form action="salida_datos_cont.html" target="_blank">
+       <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname"
+           placeholder="Ingrese su nombre aqui..."> <br><br>
+       <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname"
+           placeholder="Ingrese su apellido aqui..."> <br><br>
+       <label for="city">Ciudad: </label><input type="text" name="city"placeholder="Ingrese su ciudad aqui..."> <br><br>
+       <label for="zipcode">Código Postal:</label><input type="text" name="zipcode"
+           placeholder="Ingrese su codigo postal aqui..."> <br> <br>
+       <label for="telefono">Telefono: </label><input type="tel" name="telefono"placeholder="Ingrese su teléfono con prefijo aqui..." ><br><br>
+       <label for="mail">Correo electrónico: </label><input type="email" name="mail" placeholder="Ingrese su e-mail aqui..."> <br><br>
+       
+       <p>Género
+           <input type="radio" name="gender" value="hombre" checked>Hombre
+           <input type="radio" name="gender" value="Mujer">Mujer
+           <input type="radio" name="gender" value="Otro"> Otro
+       </p>
+       <p> Motivo del contacto:
+           <input type="checkbox" name="motivoContacto" value="consultas"> Consultas
+           <input type="checkbox" name="motivoContacto" value="comentarios"> Comentarios
+           <input type="checkbox" name="motivoContacto" value="quejas"> Quejas
+           <input type="checkbox" name="motivoContacto" value="sugerencias"> Sugerencias
+           <input type="checkbox" name="motivoContacto" value="otros"> otros
+
+       </p>
+
+       <label for="prioridad">Prioridad: (Seleccionar)</label>
+       <select id="prioridad" name="prioridad">
+           <option value="urgente">Urgente</option><p >Urgente</p></option>
+           <option value="medio">Importante</option>
+           <option value="baja">Normal</option>
+       </select>
+       <br>
+
+       <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="10" cols="30"></textarea>
+       <br>
+       <input type="submit" value="Enviar">
+       <button type="reset">Reset</button>
+   </form>
+   <p>Cuando haga click en el boton "Enviar", la información será enviada a la línea de consulta y respondida a la brevedad.</p>
+   <br><br>
+</div>
+<div class="col-4 col-s-4"> <!--  división de columnas -->
+    <h3>TELEFONOS IMPORTANTES </h3><br>
+    <img src="./img/extintor-de-incendios.png" alt=""width="15%"><h1> 100 - BOMBEROS</h1><br>
+    <img src="./img/ambulancia.png" alt=""width="15%"><h1> 107 - EMERGENCIAS</h1><br>
+    <img src="./img/coche-de-policia.png" alt=""width="15%"><h1> 911 - POLICIA</h1><br>
+</div>
+</div>
+<br>
+<footer>
+<div class="footer">
+    <p> Proyecto CAC 23537 - Blumberg/Dalmao/Arano - 2023</p>
+</div>
+</footer>
+   
+  
+</body>
+</html>
