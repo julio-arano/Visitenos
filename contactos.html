@@ -37,7 +37,7 @@
       </div>
    </header>
    <div class="row">
-   <div class="col-8 col-s-8 menu"> <!--  división de columnas -->
+   <div class="col-5 col-s-5 menu"> <!--  división de columnas form de contacto-->
    <h2>Formulario de Contacto</h2>
    <form action="salida_datos_cont.html" target="_blank">
        <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname"
@@ -72,7 +72,7 @@
        </select>
        <br>
 
-       <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="10" cols="30"></textarea>
+       <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5" cols="30"></textarea>
        <br>
        <input type="submit" value="Enviar">
        <button type="reset">Reset</button>
@@ -80,6 +80,22 @@
    <p>Cuando haga click en el boton "Enviar", la información será enviada a la línea de consulta y respondida a la brevedad.</p>
    <br><br>
 </div>
+
+<div class="col-3 col-s-3"> <!--  división de columnas Form validado -->
+    <h2>Ingrese aquí si está registrado</h2>
+<form name='f1' onsubmit="return validar();">
+    <label for="usuario">Usuario:</label>  
+  <input type='text' name='usuario' id='usuario' value="" />
+  <div id="validar_usuario" style="color:red;"></div>
+  <label for="clave">Clave: </label>  
+  <input type='text' name='clave' id='clave' value="" /><br>(Long. Clave >= 8 caracteres)
+  <div id="validar_clave" style="color:red;"></div>
+  <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5" cols="30"></textarea>
+    <input type='submit'  value='Enviar'></td>
+<br><br>
+</form>
+</div>
+
 <div class="col-4 col-s-4"> <!--  división de columnas -->
     <h3>TELEFONOS IMPORTANTES </h3><br>
     <img src="./img/extintor-de-incendios.png" alt=""width="15%"><h1> 100 - BOMBEROS</h1><br>
