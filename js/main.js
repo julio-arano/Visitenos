@@ -33,14 +33,15 @@ cad=`
 <div class="col-12 col-s-12 menu" >
 <p> Proyecto CAC 23537 - Blumberg/Dalmao/Arano - 2023</p>
 </div>
+<br>
 <div class="redes">
   <a href="https://web.whatsapp.com/">
     <img id="redes" src="./img/whatsapp.png" alt="">
   </a>
-  <a href="https://m.facebook.com/login/?locale=es_LA&refsrc=deprecated">
+  <a href="https://www.facebook.com/turismocarmendeareco">
     <img id="redes" src="./img/facebook.png" alt="">
   </a>
-  <a href="https://www.instagram.com/">
+  <a href="https://www.instagram.com/carmendearecoturismo/">
     <img id="redes" src="./img/instagram.png" alt="">
   </a>
 </div>
