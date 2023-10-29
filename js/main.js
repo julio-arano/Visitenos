@@ -12,11 +12,37 @@ let cad=`
             <a href="https://www.carmendeareco.gob.ar/turismo/">Web oficial<img src="./img/logo_Carmen-de-Areco.png" alt=""width="50" height=""></a>     
         </nav>
         </div> 
+        <section class="container"> <!--Cosito que marea-->
+      <div id="carousel" > 
+        <img src="./img/logo_Carmen-de-Areco.png" alt="" style="width:100%;height:100%;"> 
+        <figure><h1 class="titulo">VISITE</h1></figure>
+        <figure><h1 class="titulo">GOUIN</h1></figure>
+        <figure><h1 class="titulo">VISITE</h1></figure>
+        <figure><h1 class="titulo">GOUIN</h1></figure>
+        <figure><h1 class="titulo">VISITE</h1></figure>
+        <figure><h1 class="titulo">GOUIN</h1></figure>
+        <figure><h1 class="titulo">VISITE</h1></figure>
+        <figure><h1 class="titulo">GOUIN</h1></figure>
+        
+      </div>
+    </section>
      ` 
 document.querySelector("header").innerHTML=cad
 cad=`
+
 <div class="col-12 col-s-12 menu" >
 <p> Proyecto CAC 23537 - Blumberg/Dalmao/Arano - 2023</p>
+</div>
+<div class="redes">
+  <a href="https://web.whatsapp.com/">
+    <img id="redes" src="./img/whatsapp.png" alt="">
+  </a>
+  <a href="https://m.facebook.com/login/?locale=es_LA&refsrc=deprecated">
+    <img id="redes" src="./img/facebook.png" alt="">
+  </a>
+  <a href="https://www.instagram.com/">
+    <img id="redes" src="./img/instagram.png" alt="">
+  </a>
 </div>
 ` 
 document.querySelector("footer").innerHTML=cad
