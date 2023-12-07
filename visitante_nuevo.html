@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Nuevo Visitante</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./ccs/estilos.css"> 
+  <link rel="shortcut icon" href="./img/address-book-solid.svg" type="image/x-icon">
+</head>
+<body>
+  <!--<header id="header">
+     place navbar here 
+  </header> -->
+  <div class="galeria"><!-- carrousel de IMG-->
+    <div class="listaImagenes">
+    <img src="./img/gouin.jpg" alt="imagenPrincipal">
+    <img src="./img/asado 2.jpg" alt="imagenPrincipal">
+    <img src="./img/el-fogon.jpg" alt="imagenPrincipal">
+    <img src="./img/fideos_caseros.jpg" alt="imagenPrincipal">
+    <img src="./img/estacionGouin.webp" alt="imagenPrincipal">
+    <img src="./img/jineteada2.jpg" alt="imagenPrincipal">
+    <img src="./img/pastelito.webp" alt="imagenPrincipal">
+</div>     
+<header>
+
+<div>
+ <nav>    <!--  nav a las otras paginas -->
+      <a href="index.html">Home</a>
+      <a href="./hospedajes.html">Hospedajes</a>
+      <a href="./gastronomia.html">¿Dónde comer?</a>
+      <a href="./turismo.html">¿Qué hacer?</a>
+      <a href="./fiestapop.html">Fiesta del Pastel!</a>
+      <a href="./contactos.html">Contacto</a>
+      <a href="./mapa.html">¿cómo llegar?</a>
+      <a href="./condiciones.html">Condiciones TPO</a>
+      <a href="https://www.carmendeareco.gob.ar/turismo/">Web oficial<img src="./img/logo_Carmen-de-Areco.png" alt=""width="50" height=""></a>     
+ </nav>
+</div>
+</header>
+  <main>
+  
+    <div  class="container1" id="app">
+       <form>
+        <h1>Registro de visitantes de Gouin</h1>
+        <div class="col-5 col-s-5 menu">
+        <!--<div class="mb-3">
+          <label for="fecha">Fecha de visita / Date of visit</label>
+          <input type="date" name="fecha" id="fecha" v-model="fecha">
+        </div>-->
+        <div class="mb-3">
+            <label for="nombre">Nombre / Name</label>
+            <input type="text" name="nombre" id="nombre" v-model="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="apellido">Apellido / Surname</label>
+            <input type="text" name="apellido" id="apellido" v-model="apellido">
+          </div>
+          <div class="mb-3">
+            <label for="ciudad">Ciudad / City</label>
+            <input type="text" name="ciudad" id="ciudad" v-model="ciudad">
+          </div>
+          <div class="mb-3">
+            <label for="pais">Pais / Country</label>
+            <input type="text" name="pais" id="pais" v-model="pais">
+          </div>
+        </div>
+        <div class="col-5 col-s-5 menu">
+          <div class="mb-3">
+            <label for="imagen">Imagen</label>
+            <input type="text" name="imagen" id="imagen" v-model="imagen">
+            <img width="100" :src="imagen" alt="">
+          </div>
+          <div class="mb-3">
+            <label for="email">e-mail</label>
+            <input type="text" name="email" id="email" v-model="email">
+          </div>
+          <div class="mb-3">
+            <label for="whatsapp">Whatsapp / Phone</label>
+            <input type="text" name="whatsapp" id="whatsapp" v-model="whatsapp">
+          </div>
+          <div class="mb-3">
+            <label for="comentario">Su comentario / Your comment</label>
+            <input type="text" name="comentario" id="comentario" v-model="comentario">
+          </div>
+        </div>
+
+
+          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="./js/mainv.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./js/visitantes.js"></script>
+</body>
+</html>

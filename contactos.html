@@ -22,11 +22,27 @@
     </div>     
   <header>
     
+      <div>
+       <nav>    <!--  nav a las otras paginas -->
+            <a href="index.html">Home</a>
+            <a href="./hospedajes.html">Hospedajes</a>
+            <a href="./gastronomia.html">¿Dónde comer?</a>
+            <a href="./turismo.html">¿Qué hacer?</a>
+            <a href="./fiestapop.html">Fiesta del Pastel!</a>
+            <a href="./contactos.html">Contacto</a>
+            <a href="./mapa.html">¿cómo llegar?</a>
+            <a href="./condiciones.html">Condiciones TPO</a>
+            <a href="https://www.carmendeareco.gob.ar/turismo/">Web oficial<img src="./img/logo_Carmen-de-Areco.png" alt=""width="50" height=""></a>     
+       </nav>
+      </div>
    </header>
    <div class="row">
    <div class="col-5 col-s-5 menu"> <!--  división de columnas form de contacto-->
    <h2>Formulario de Contacto</h2>
-   <form action="salida_datos_cont.html" target="_blank">
+   <br>
+            <a  class="btn btn-primary" href="visitante_nuevo.html">Nuevo visitante</a>
+            <br><br>
+   <!--<form action="salida_datos_cont.html" target="_blank">
        <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname"
            placeholder="Ingrese su nombre aqui..."> <br><br>
        <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname"
@@ -65,11 +81,13 @@
        <button type="reset">Reset</button>
    </form>
    <p>Cuando haga click en el boton "Enviar", la información será enviada a la línea de consulta y respondida a la brevedad.</p>
-   <br><br>
+   <br><br>-->
+
+
 </div>
 
 <div class="col-3 col-s-3"> <!--  división de columnas Form validado -->
-    <h2>Ingrese aquí si está registrado</h2>
+    <h2>Administrador</h2>
 <form name='f1' onsubmit="return validar();">
     <label for="usuario">Usuario:</label>  
   <input type='text' name='usuario' id='usuario' value="" />
@@ -77,8 +95,9 @@
   <label for="clave">Clave: </label>  
   <input type='text' name='clave' id='clave' value="" /><br>(Long. Clave >= 8 caracteres)
   <div id="validar_clave" style="color:red;"></div>
-  <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5" cols="30"></textarea>
+  <!--<label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5" cols="30"></textarea>-->
     <input type='submit'  value='Enviar'></td>
+    <a  class="btn btn-primary" href="visitantes.html">Ver visitantes</a>
 <br><br>
 </form>
 </div>
@@ -92,9 +111,11 @@
 </div>
 <br>
 <footer>
-    
+<div class="footer">
+    <p> Proyecto CAC 23537 - Blumberg/Dalmao/Arano - 2023</p>
+</div>
 </footer>
    
-    <script src="./js/main.js"></script>   
+  
 </body>
 </html>
