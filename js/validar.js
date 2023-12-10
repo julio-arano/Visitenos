@@ -18,18 +18,34 @@ if (usuario.value == "") {
     }
  
     if (error == false) {
-        alert("Dato enviado")
-        document.getElementById("usuario").value = ""
-        document.getElementById("validar_usuario").innerHTML = "";
-        document.getElementById("clave").value = ""
-        document.getElementById("validar_clave").innerHTML = "";
+        let user=document.getElementById("usuario").value;
+    let pass=document.getElementById("clave").value;
+    if (user=="admin" && pass=="12345678") 
+    {
+        alert("uhhh")
+        window.location.href = "./visitantes.html";
     }
-
-
-
+    
+    }
 
     if (error)
         return false;
     else
         return true;
 }
+
+function loguear()
+{
+    let user=document.getElementById("usuario").value;
+    let pass=document.getElementById("clave").value;
+    if (user=="admin" && pass=="12345678") 
+    {
+
+        window.location.href = "./visitantes.html";
+    }
+    else
+        {
+alert("Datos incorrectos");
+        }
+    }
+
