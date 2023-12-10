@@ -22,8 +22,7 @@ if (usuario.value == "") {
     let pass=document.getElementById("clave").value;
     if (user=="admin" && pass=="12345678") 
     {
-        alert("uhhh")
-        window.location.href = "./visitantes.html";
+        window.location.href = "visitantes.html";
     }
     
     }
