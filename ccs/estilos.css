@@ -305,3 +305,8 @@ p::selection{
 .redes{
   text-align: right;
 }
+
+.fotosapi {
+    max-width: 300px;
+    height: auto;
+  }
