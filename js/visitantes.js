@@ -9,7 +9,7 @@ const { createApp } = Vue
         error:false,
         cargando:true,
         /*atributos para el guardar los valores del formulario */
-        id:0,
+        
         fecha:"",
         nombre:"",
         apellido:"",
@@ -21,7 +21,12 @@ const { createApp } = Vue
         comentario:"",
         
     }  
+    
     },
+    computed: {
+        usuarioRandom() {
+          return Math.floor(Math.random() * this.personas.length)
+        }},
     methods: {
         fetchData(url) {
             fetch(url)
